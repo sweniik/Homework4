@@ -1,0 +1,226 @@
+ /* Name: Sweni Karedia 
+  File: style-2.css
+  Date created: 02/28/2025
+  Date Updated: 04/10/2025
+  Description: Creating a Patient Form with Responsive Layout and Custom Form Elements 
+ */
+h1 {
+    text-align: center;
+    font-family: Cambria;
+}
+h2 {
+    font-size: 18px; 
+    font-family: Arial;
+}
+form {
+    font-size: small;
+    font-weight: bold;
+}
+/* Align boxes */
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px
+}
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    font-size: small;
+    gap: 6px; 
+}
+.checkbox-group input[type="checkbox"] {
+    width: auto;
+}
+
+fieldset {
+    width: 50%;
+    padding: 10 px;
+}
+legend {
+    text-align: center;
+    font-size: small;
+}
+.radio-group {
+    display: flex;
+    gap: 15px; 
+    align-items: center;
+    font-size: small;
+}
+
+.radio-group input[type="radio"] {
+    width: auto;
+}
+.insurance-options {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    font-size: small;
+}
+
+.insurance-options input[type="radio"] {
+    width: auto;   
+}
+#insurance-details input[type="text"] {
+    width: 100%;   
+    max-width: 400px;   
+    padding: 8px;                
+    margin-bottom: 15px;   
+    font-size: 10px;       
+}
+#insurance-details label {
+    display: block;         
+    margin-bottom: 5px;     
+    font-size: 13px;  
+    font-weight: bold;   
+}
+.medication-options {
+    display: flex;
+    gap: 15px;            
+    align-items: center;  
+    font-size: small;   
+
+}
+
+.medication-options input[type="radio"] {
+    width: auto;
+}
+
+#medication-details label {
+    display: block;         
+    margin-bottom: 5px;     
+    font-size: 13px; 
+    
+}
+/* Slider Bar */
+input[type="range"] {
+    width: 22%;
+    max-width: 200px;
+    margin-top: 10px;
+    height: 5px;
+}
+.pain-level span {
+    width: 100%;  
+    margin: 10px;
+}
+/* Submit and Reset Button*/
+.button-container {
+    display: flex;
+    gap: 80px;
+    max-width: 250px;
+    margin-top: 10px;
+}
+
+.button-container input {
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+
+.error {
+    color: red;
+    font-size: 12px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 2px;
+}
+.pword-message {
+    text-align: right;
+    font-family: Cambria;
+    font-weight: 10px;
+    position: relative;
+    left: 100px;
+    background: black;
+    padding: 10px;
+    border-spacing: 2px;
+    border-radius: 20px;
+    color: pink;
+}
+
+#alert-box {
+display: none;
+position: fixed;
+z-index: 9999;
+}
+
+#alert-content {
+    background-color: pink;
+    border-radius: 10px;
+    width: 10px;
+    height: 20px;
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+#alert-content h4 {
+   font-size: large;
+   text-align: center;
+   font-family: Cambria;
+}
+
+#close-alert {
+    background-color: paleturquoise;
+    border-width: 1px;
+    border-style: solid;
+    color: pink;
+    font-size: 15px;
+    font-weight: bold;
+    height: 10px;
+    width: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+    text-align: center;
+    font-family: Cambria;
+}
+
+
+
+
+
+.logo {
+    position: absolute;
+    top: 8px;
+    left: 6px;
+    height: 155px;
+}
+
+body {
+    background-color: #f0f8ff;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    background-color: #91b5bb;
+    color: white;
+    padding: 20px;
+}
+
+table {
+    font-size: small;
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 10px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 5px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    font-size: small;
+    background-color: #91b5bb
+}
+
