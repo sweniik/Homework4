@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<!--
+  Name: Sweni Karedia 
+  File: Patient-Form.html
+  Date created: 02/01/2025
+  Date Updated: 02/09/2025
+  Description: Creating a patient form using HTML and CSS
+
+<html lang= "en">
+<head>
+<meta charset="UTF-8">
+<meta name= "viewport" content="width=device-width, intial-scale=1.0">
+<title>Inova Medical</title>
+<!-- Load External CSS styles -->
+<link rel="stylesheet" href="Style.css" />
+  </head>  
+<body>
+    <!-- Header -->
+    <header>
+    <h1>Inova Medical</h1>
+    
+<p id="date" align="right"></p>
+<script src="Script.js"></script>
+<div class="container">
+<div class="logo-text">
+        <img src="health.logo.jpg" height="130px" alt= "Inova Medical health logo" class="logo">
+</div>
+</div>
+  </header> 
+
+  <!--Patient Registration Form -->
+
+  <section>
+    <br>
+  
+    <h2>Patient Registration Form<h2>
+    <form action="thankyou.html" method="GET">
+ <table>
+            <tr>
+                <td><label for="fname">First Name</label></td>
+                <td><label for="mname">Middle Initial</label></td>
+                <td><label for="lname">Last Name</label></td>
+            </tr>
+            <tr>
+                <td><input type="text" 
+                name="fname" required maxlength="30"></td>
+                <td><input type="text" 
+                name="mname" required maxlength="1"></td>
+                <td><input type="text" 
+                name="lname" required maxlength="30"></td> 
+            </tr>
+            <tr>
+              <td><label for="dob">Date of Birth</label></td>
+              <td><label for="ssn">Social Security Number</label></td>
+            <tr>
+                <td><input type="date" placeholder="MM/DD/YYYY" 
+                name="dob" required></td>
+                <td><input type="password" 
+                name="ssn" maxlength="11"></td>
+            </tr>
+            <tr>
+              <td><label for="Address 1">Address Line 1</label></td>
+            </tr>
+            <td><input type="text" name="address1" maxlength= "30" required></td>
+            <tr>
+            <td><label for="Address 2">Address Line 2</label></td>
+            </tr>
+            <td><input type="text" name="address2" maxlength= "30"></td>
+            </tr>
+              <tr>
+                <td><label for="city">City</label></td>
+                <td><label for="state">State</label></td>
+                <td><label for="zip">Zip Code</label></td>
+                </tr>
+                
+              <tr>
+                <td><input type="text" name="city" maxlength="30" required></td>
+                <td>
+                     <select name="state">
+                        <option value="">Select State</option>
+                        <option value="AL">AL</option>
+                        <option value="AK">AK</option>
+                        <option value="AZ">AZ</option>
+                        <option value="AR">AR</option>
+                        <option value="CA">CA</option>
+                        <option value="CO">CO</option>
+                        <option value="CT">CT</option>
+                        <option value="DE">DE</option>
+                        <option value="DC">DC</option>
+                        <option value="FL">FL</option>
+                        <option value="GA">GA</option>
+                        <option value="HI">HI</option>
+                        <option value="ID">ID</option>
+                        <option value="IL">IL</option>
+                        <option value="IN">IN</option>
+                        <option value="IA">IA</option>
+                        <option value="KS">KS</option>
+                        <option value="KY">KY</option>
+                        <option value="LA">LA</option>
+                        <option value="ME">ME</option>
+                        <option value="MD">MD</option>
+                        <option value="MA">MA</option>
+                        <option value="MI">MI</option>
+                        <option value="MN">MN</option>
+                        <option value="MS">MS</option>
+                        <option value="MO">MO</option>
+                        <option value="MT">MT</option>
+                        <option value="NE">NE</option>
+                        <option value="NV">NV</option>
+                        <option value="NH">NH</option>
+                        <option value="NJ">NJ</option>
+                        <option value="NM">NM</option>
+                        <option value="NY">NY</option>
+                        <option value="NC">NC</option>
+                        <option value="ND">ND</option>
+                        <option value="OH">OH</option>
+                        <option value="OK">OK</option>
+                        <option value="OR">OR</option>
+                        <option value="PA">PA</option>
+                        <option value="PR">PR</option>
+                        <option value="RI">RI</option>
+                        <option value="SC">SC</option>
+                        <option value="SD">SD</option>
+                        <option value="TN">TN</option>
+                        <option value="TX">TX</option>
+                        <option value="UT">UT</option>
+                        <option value="VT">VT</option>
+                        <option value="VA">VA</option>
+                        <option value="WA">WA</option>
+                        <option value="WV">WV</option>
+                        <option value="WI">WI</option>
+                        <option value="WY">WY</option>
+                    </select>
+                  </td>
+                <td><input type="text" name="zip" maxlength="10" required></td>
+            </tr>
+            <tr>
+          <td><label for="email">Email</label></td>
+          <td><label for="phone">Phone Number</label></td>
+          </tr>
+          <tr>
+<td><input type="email" name="email" required></td>
+<td><input type="tel" name="phone" placeholder="+1(000) 000-0000"required></td>
+    </tr>
+  <hr>
+</tr>
+
+<tr>
+  <td colspan="100%">
+<hr style= "width: 100%; border: 0.5px solid black;">
+
+</tr>
+    <tr>
+   <td>Describe Symptoms</td>
+   <td colspan="3"><textarea name="symptoms" 
+   rows="3" cols="50"></textarea></td> 
+</tr>
+</table>
+</form>
+
+    <form>
+      <fieldset>
+
+      <legend>Medical History (Check if you have ever had any of the following):</legend>
+      <div class="checkbox-group">
+            <label><input type="checkbox" name="illness" value="asthma">Asthma</label>
+            <label><input type="checkbox" name="illness" value="chicken pox">Chicken Pox</label>
+            <label><input type="checkbox" name="illness" value="tuberculosis">Tuberculosis</label>
+            <label><input type="checkbox" name="illness" value="hepatitis">Hepatitis</label>
+            <label><input type="checkbox" name="illness" value="stroke">Stroke</label>
+        </div>    
+        </fieldset>
+    </form>
+    <!--Radio Buttons -->
+    <fieldset>
+                <legend>Gender:</legend>
+                <div class="radio-group">
+                <input type="radio" name="gender" value="male"> Male
+                <input type="radio" name="gender" value="female"> Female
+              </div>
+            </fieldset>
+
+      <fieldset> 
+    <legend>Do you have insurance?</legend>
+    <div class="insurance-options">
+    <input type="radio" name="insurance" value="yes" 
+    onclick="document.getElementById('insurance-details').style.display='block'"> Yes
+
+    <input type="radio" name="insurance" 
+    value="no" onclick="document.getElementById('insurance-details').style.display='none'"> No
+    </div>
+
+    </fieldset>
+
+    <div id="insurance-details" style="display: none;">
+    <label for="insurance-provider">Insurance Provider</label>
+    <input type="text" id="insurance-provider" name="insurance-provider">
+
+    <label for="insurance-type">Type of Insurance</label>
+    <input type="text" id="insurance-type" name="insurance-type">
+
+    <label for="insurance-policy">Insurance Policy Number</label>
+    <input type="text" id="insurance-policy" name="insurance-policy">
+</div>
+
+<fieldset>
+    <legend>Are you currently taking any medications?</legend>
+    <div class="medication-options">
+        <input type="radio" name="medication" value="yes" onclick="document.getElementById('medication-details').style.display='block'"> Yes
+        
+        <input type="radio" name="medication" value="no" onclick="document.getElementById('medication-details').style.display='none'"> No
+    </div>
+</fieldset>
+
+<div id="medication-details" style="display: none;">
+    <label for="medication-name">Please specify the medications you are taking:</label>
+    <textarea id="medication-name" name="medication-name" rows="4" cols="50"></textarea>
+</div>
+
+<fieldset>
+    <legend>What is your current pain level?</legend>
+  
+    <div class="pain-level scale">
+        <span>Low</span>
+        <span>Moderate</span>
+        <span>High</span>
+    </div>
+    <input type="range" name="pain-level" min="0" max="2">
+</fieldset>
+
+<hr>
+<h2> Create an Account<h2>
+<section>
+<table>
+  
+<tr>
+    <td><label for="user">Username</label></td>
+            </tr>
+     <td><input type="text" name="user" maxlength= "20" required></td>
+    </tr>
+    <tr>
+        <td><label for="password">Password</label></td>
+        <td><label for="password">Confirm Password</label></td>
+            </tr>
+            <tr>
+                <td><input type="password" 
+                name="password" required></td>
+                <td><input type="password" 
+                name="confirm-password"></td>
+            </tr>
+        </table>
+
+    <!-- Buttons -->
+    <div class="button-container">
+    <input type="reset" value="Reset">
+            <input type="submit" value="Submit">
+    </section>
+</form>
+    <!-- Footer -->
+    <footer>
+      <p>
+        Inova Medical | 
+            <a href="#" onclick="alert('Phone: 123-456-7890')">Contact Us</a> | 
+            PO Box 60000, Sugar Land, TX 77478 | 
+
+            <a href="https://www.facebook.com" target="_blank">Facebook</a> | 
+            <a href="https://www.X.com" target="_blank">Twitter</a>
+        </p>
+    </footer>
+
+    </body>
+    </html>
